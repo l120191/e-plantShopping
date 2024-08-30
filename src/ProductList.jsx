@@ -219,7 +219,7 @@ function ProductList() {
         }
     ];
    const styleObj={
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#136216',
     color: '#fff!important',
     padding: '15px',
     display: 'flex',
@@ -275,8 +275,8 @@ function ProductList() {
                <div className="luxury">
                <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
                <a href="/" style={{textDecoration:'none'}}>
-                        <div>
-                    <h3 style={{color:'white'}}>Paradise Nursery</h3>
+                    <div>
+                    <h3 style={{color:'white'}}>Licia's Plants Shop</h3>
                     <i style={{color:'white'}}>Where Green Meets Serenity</i>
                     </div>
                     </a>
@@ -286,8 +286,9 @@ function ProductList() {
             <div style={styleObjUl}>
                 <div> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>      
                 <div> 
-                    <span className="cart_quantity_count"> {calculateTotalItems(cart)}  </span>
+                    
                     <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}>
+                    <span className="cart_quantity_count"> {calculateTotalItems(cart)}  </span>
                     <h1 className='cart'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="IconChangeColor" height="68" width="68">
                             <rect width="156" height="156" fill="none"></rect>

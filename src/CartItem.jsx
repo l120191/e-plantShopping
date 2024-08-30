@@ -16,6 +16,14 @@ const CartItem = ({ onContinueShopping, setAddedToCart }) => {
     return totalAmount;
   };
 
+  const calculateTotalPlants = () => {
+    let totalPlants = 0;
+    cart.map(element => {
+      totalPlants += element.quantity;
+    });
+    return totalPlants;
+  };
+
   const handleContinueShopping = (e) => {
     onContinueShopping(e)
   };
@@ -45,6 +53,7 @@ const CartItem = ({ onContinueShopping, setAddedToCart }) => {
   };
 
   const handleCheckoutShopping = (e) => {
+    console.log('Functionality to be added for future reference');
     alert('Functionality to be added for future reference');
   };
 
@@ -60,6 +69,7 @@ const CartItem = ({ onContinueShopping, setAddedToCart }) => {
 
   return (
     <div className="cart-container">
+      <h2 style={{ color: 'black' }}>Total Plants Number: ${calculateTotalPlants()}</h2>
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
       <div>
         {cart.map(item => (
